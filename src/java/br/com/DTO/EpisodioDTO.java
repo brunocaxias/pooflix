@@ -13,13 +13,13 @@ import java.util.LinkedList;
 
 public class EpisodioDTO {
     private int id;
-    private String temporada;
+    private int temporada;
     private String titulo;
     private SerieDTO serie;
     public String resumo;
     private LinkedList<PerformanceDTO> perfomances;
 
-    public EpisodioDTO(int id, String titulo, String temporada, String resumo){
+    public EpisodioDTO(int id, String titulo, int temporada, String resumo){
         this.id = id;
         this.titulo = titulo;
         this.temporada = temporada;
@@ -48,7 +48,7 @@ public class EpisodioDTO {
         return id;
     }
 
-    public String getTemporada(){ 
+    public int getTemporada(){ 
         return temporada;
     }
 
